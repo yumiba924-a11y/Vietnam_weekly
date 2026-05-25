@@ -253,16 +253,25 @@
     z-index: 15;
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0 60px;
-    padding-bottom: 100px;
+    justify-content: flex-start;
+    padding: clamp(40px, 8vh, 120px) 60px clamp(150px, 20vh, 200px);
     text-align: center;
   }
 
   .hero-left {
     max-width: 1680px;
     width: 100%;
+  }
+
+  /* 今週のテーマ（単独KPI）— ヒーロー下部・中央 */
+  .hero-theme {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(8px, 1.2vw, 14px);
   }
 
   .hero-label {
@@ -1308,6 +1317,12 @@
         </defs>
         <rect x="0" y="0" width="760" height="96" rx="2" fill="rgba(255,255,255,0.88)" mask="url(#hero-ko-mask)"/>
       </svg>
+    </div>
+
+    <div class="hero-theme">
+      <div class="hero-kpi-label">今週のテーマ</div>
+      <div class="hero-kpi-value negative" style="font-size:clamp(24px,3.4vw,54px);white-space:nowrap">商品株の巻き戻し</div>
+      <div class="hero-kpi-sub">前週主役エネルギーが最弱転落 −4.95%</div>
     </div>
   </div>
 </div>
