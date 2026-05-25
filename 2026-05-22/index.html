@@ -490,7 +490,6 @@
   .narrative-body,
   .news-body,
   .catalyst-desc,
-  .macro-desc,
   .column-body,
   .column-highlight,
   .risk-statement,
@@ -763,116 +762,6 @@
 
   .mover-return.pos { color: var(--up-color); }
   .mover-return.neg { color: var(--down-color); }
-
-  /* ── MACRO SECTION ── */
-  .macro-section {
-    background: var(--white);
-  }
-
-  .macro-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    margin-bottom: 56px;
-  }
-
-  .macro-card {
-    padding: 32px 24px;
-    border: 1px solid var(--border);
-    position: relative;
-    overflow: hidden;
-    transition: border-color 0.3s;
-  }
-
-  .macro-card::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: var(--vn-gold);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-
-  .macro-card:hover::after { transform: scaleX(1); }
-  .macro-card:hover { border-color: var(--cri-green); }
-
-  .macro-icon {
-    font-size:32px;
-    margin-bottom: 16px;
-    display: block;
-  }
-
-  .macro-indicator {
-    font-family: var(--font-sans-en);
-    font-size:15px;
-    letter-spacing: 0.08em;
-    color: var(--text-light);
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
-  .macro-value {
-    font-family: var(--font-mincho);
-    font-size:38px;
-    font-weight: 700;
-    color: var(--cri-green-dark);
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .macro-desc {
-    font-size:16px;
-    color: var(--text-mid);
-    line-height: 1.7;
-  }
-
-  /* External environment strip */
-  .ext-env-strip {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0;
-    border: 1px solid var(--border);
-  }
-
-  .ext-item {
-    padding: 20px 24px;
-    border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .ext-item:last-child { border-right: none; }
-
-  .ext-name {
-    font-family: var(--font-sans-en);
-    font-size:14px;
-    color: var(--text-light);
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-  }
-
-  .ext-val {
-    font-family: var(--font-sans-en);
-    font-size:24px;
-    font-weight: 500;
-    color: var(--text-dark);
-    white-space: nowrap;
-  }
-
-  .ext-chg {
-    font-family: var(--font-sans-en);
-    font-size:15px;
-    white-space: nowrap;
-  }
-
-  .ext-chg.pos { color: var(--up-color); }
-  .ext-chg.neg { color: var(--down-color); }
 
   /* ── NEWS SECTION ── */
   .news-section {
