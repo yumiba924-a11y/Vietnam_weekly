@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1440">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vietnam Weekly | CQC Capital Research & Investments</title>
 <style>
   :root {
@@ -1179,6 +1179,82 @@
   .mid-badge { background: rgba(245,196,0,0.15); color: #8a6d00; }
   .watch-badge { background: var(--cream-dark); color: var(--text-mid); }
 
+  /* spotlight 2カラム（モバイルで1カラムに落とすためクラス化） */
+  .spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+  }
+
+  /* ───────── モバイル最適化（スマホ） ───────── */
+  @media (max-width: 768px) {
+    /* セクション余白・見出し */
+    .section-inner { padding: 56px 20px; }
+    .section-title { font-size: 30px; }
+    .section-title-en { font-size: 16px; margin-bottom: 32px; }
+    .section-eyebrow { font-size: 14px; letter-spacing: 0.2em; }
+
+    /* ヒーロー上部（ロゴ＋日付バッジ） */
+    .hero-nav { flex-wrap: wrap; gap: 12px; padding: 20px; }
+    .hero-logo-img { height: 38px; }
+    .logo-text { font-size: 13px; padding-left: 12px; line-height: 1.4; }
+    .hero-date-badge { font-size: 13px; padding: 6px 12px; }
+
+    /* ヒーロー本文 */
+    .hero-content { padding-left: 20px; padding-right: 20px; padding-bottom: clamp(80px, 14vh, 110px); }
+    .hero-label { font-size: 12px; letter-spacing: 0.2em; }
+    .hero-title { font-size: clamp(30px, 9vw, 56px); }
+    .hero-ko { width: min(92vw, 520px); }
+    .hero-kpi-label { font-size: 14px; }
+    .hero-kpi-sub { font-size: 14px; }
+    .hero-arrow { display: none; }
+
+    /* グリッドを縦に */
+    .stats-panel { grid-template-columns: 1fr; }
+    .movers-grid { grid-template-columns: 1fr; gap: 28px; }
+    .spotlight-grid { grid-template-columns: 1fr; gap: 28px; }
+    .column-inner { grid-template-columns: 1fr; gap: 36px; padding: 56px 20px; }
+    .cal-columns { grid-template-columns: 1fr; gap: 24px; }
+    .sector-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sector-card div[style*="nowrap"] { white-space: normal !important; }
+
+    /* カタリスト：タイムライン装飾をやめ縦積み */
+    .catalyst-list { border-left: none; padding-left: 0; margin-left: 0; }
+    .catalyst-item { grid-template-columns: 1fr; gap: 6px; }
+    .catalyst-item::before { display: none; }
+
+    /* リスク */
+    .risk-section { padding: 48px 20px; }
+    .risk-statement { font-size: 21px; }
+    .risk-stat-group { flex-direction: column; gap: 18px; }
+
+    /* フッター */
+    .footer { padding: 40px 20px; }
+    .footer-inner { flex-direction: column; gap: 24px; }
+    .footer-meta { text-align: left; }
+    .footer-disclaimer { font-size: 15px; margin-top: 20px; }
+
+    /* 本文・見出しフォント */
+    .narrative-lead { font-size: 19px; }
+    .narrative-body { font-size: 17px; }
+    .news-body { font-size: 16px; }
+    .news-headline { font-size: 21px; }
+    .news-card.featured .news-headline { font-size: 21px !important; }
+    .column-em { font-size: 38px; white-space: normal; }
+    .column-subtitle { font-size: 16px; }
+    .column-body { font-size: 17px; }
+    .column-highlight { font-size: 17px; }
+    .fact-number { font-size: 38px; }
+    .mover-name-jp { font-size: 17px; }
+  }
+
+  @media (max-width: 420px) {
+    .hero-title { font-size: 28px; }
+    .hero-ko { width: 94vw; }
+    .section-title { font-size: 26px; }
+    .sector-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -1530,7 +1606,7 @@
     <div class="section-title reveal">注目銘柄スポットライト</div>
     <div class="section-title-en reveal">Stock Spotlight Analysis</div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:40px">
+    <div class="spotlight-grid">
       <!-- Stock 1: NHT -->
       <div class="reveal">
         <div style="background:white;border-left:4px solid var(--up-color);padding:32px;margin-bottom:24px">
