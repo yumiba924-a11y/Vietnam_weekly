@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vietnam Weekly — Capital Quest Corporation, Ltd. 投資調査部</title>
+<meta name="description" content="Capital Quest Corporation, Ltd. 投資調査部によるベトナム株式市場 週次レポートのアーカイブ。">
+<style>
+:root{
+  --green:#00492C; --green-deep:#002D1A; --gold:#F5C400; --red:#DA251D;
+  --cream:#FAF8F2; --white:#fff; --ink:#1A1A1A; --mid:#4A4A4A; --light:#888;
+  --border:rgba(0,73,44,0.14);
+  --mincho:"Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","YuMincho","ＭＳ 明朝",serif;
+  --sans-en:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+  --gothic:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium",YuGothic,"Yu Gothic","Meiryo UI",Meiryo,"Noto Sans JP",system-ui,-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--mincho);background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* Header */
+.hero{background:var(--green-deep);color:var(--white);padding:56px 32px 48px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 30%,rgba(245,196,0,0.08),transparent 60%);pointer-events:none}
+.hero-inner{max-width:1080px;margin:0 auto;position:relative;z-index:2}
+.brand-row{display:flex;align-items:center;gap:18px;margin-bottom:40px}
+.brand-row img{height:56px;width:auto;display:block}
+.brand-text{font-family:var(--sans-en);font-size:14px;letter-spacing:0.12em;color:rgba(255,255,255,0.7);border-left:1px solid rgba(255,255,255,0.2);padding-left:18px;line-height:1.5}
+.eyebrow{font-family:var(--sans-en);font-size:14px;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:46px;height:1px;background:var(--gold)}
+.hero-title{font-family:var(--sans-en);font-size:64px;font-weight:900;letter-spacing:-0.02em;line-height:1.02}
+.hero-title .red{color:var(--red)}
+.hero-sub{font-size:19px;color:rgba(255,255,255,0.6);margin-top:14px}
+
+/* Latest */
+.wrap{max-width:1080px;margin:0 auto;padding:48px 32px 80px}
+.section-label{font-family:var(--sans-en);font-size:13px;letter-spacing:0.22em;color:var(--light);text-transform:uppercase;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.latest{display:block;background:var(--white);border:1px solid var(--border);border-left:5px solid var(--gold);border-radius:3px;padding:32px 36px;margin-bottom:44px;text-decoration:none;color:inherit;transition:box-shadow .2s,transform .2s}
+.latest:hover{box-shadow:0 14px 40px rgba(0,73,44,0.12);transform:translateY(-3px)}
+.latest-tag{display:inline-block;font-family:var(--sans-en);font-size:12px;letter-spacing:0.15em;color:var(--green);background:rgba(0,73,44,0.07);padding:4px 12px;border-radius:20px;margin-bottom:14px;text-transform:uppercase}
+.latest-date{font-family:var(--sans-en);font-size:15px;color:var(--light);margin-bottom:6px}
+.latest-head{font-size:27px;font-weight:700;color:var(--green);line-height:1.4;margin-bottom:10px}
+.latest-desc{font-size:16px;color:var(--mid);line-height:1.9}
+.latest-cta{font-family:var(--sans-en);font-size:14px;letter-spacing:0.08em;color:var(--red);margin-top:18px;font-weight:600}
+
+/* Backnumbers */
+.issue{display:flex;align-items:baseline;gap:20px;padding:18px 8px;border-bottom:1px solid var(--border);text-decoration:none;color:inherit;transition:background .15s}
+.issue:hover{background:#fff}
+.issue-date{font-family:var(--sans-en);font-size:16px;font-weight:600;color:var(--green);white-space:nowrap;width:128px;flex-shrink:0}
+.issue-title{font-size:16px;color:var(--mid)}
+.issue-chg{font-family:var(--sans-en);font-size:15px;font-weight:700;margin-left:auto;white-space:nowrap}
+.pos{color:#00A86B}.neg{color:var(--red)}
+
+/* Footer */
+.foot{background:var(--green-deep);color:rgba(255,255,255,0.5);font-size:13px;line-height:1.9;padding:36px 32px}
+.foot-inner{max-width:1080px;margin:0 auto}
+.foot a{color:var(--gold);text-decoration:none}
+.foot-disc{margin-top:14px;font-size:12px;color:rgba(255,255,255,0.3);max-width:760px}
+
+@media(max-width:640px){
+  .hero-title{font-size:40px}
+  .brand-row img{height:44px}
+  .issue{flex-wrap:wrap}
+  .issue-chg{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <a class="brand-row" href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" style="text-decoration:none">
+      <img src="./assets/cqc_logo_white.png" alt="Capital Quest Corporation, Ltd.">
+      <span class="brand-text">Capital Quest Corporation, Ltd.<br>投資調査部</span>
+    </a>
+    <div class="eyebrow">Weekly Intelligence Report</div>
+    <h1 class="hero-title">Vietnam <span class="red">Weekly</span></h1>
+    <div class="hero-sub">ベトナム株式市場 週次レポート — アーカイブ</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="section-label">Latest Issue ／ 最新号</div>
+  <a class="latest" href="./2026-05-22/index.html">
+    <span class="latest-tag">VOL.2026 — 5/18〜5/22</span>
+    <div class="latest-date">2026年5月25日 発行</div>
+    <div class="latest-head">高値圏から調整局面入り、コモディティ・エネルギーが巻き戻し</div>
+    <div class="latest-desc">VN-Indexは週次−2.31%と反落、節目の1,900ptを割り込む。前2週の主役だったエネルギー（−4.95%）が最弱に転落し、景気敏感・大型が軒並み安。プラスはIT（+2.55%）一般消費財のディフェンシブのみ。</div>
+    <div class="latest-cta">レポートを開く →</div>
+  </a>
+
+  <div class="section-label">Back Numbers ／ バックナンバー</div>
+
+  <a class="issue" href="./2026-05-22/index.html">
+    <span class="issue-date">5/18〜5/22</span>
+    <span class="issue-title">高値圏から調整入り・コモディティ巻き戻し</span>
+    <span class="issue-chg neg">VN-Index −2.31%</span>
+  </a>
+  <a class="issue" href="./2026-05-15/index.html">
+    <span class="issue-date">5/11〜5/15</span>
+    <span class="issue-title">コモディティ急騰（HRC・石油ガス）・高値圏揉み合い</span>
+    <span class="issue-chg pos">VN-Index +0.33%</span>
+  </a>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <a href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener">Capital Quest Corporation, Ltd. — 公式サイト</a> ／ 投資調査部
+    <div class="foot-disc">
+      本ページに掲載するレポートはCapital Quest Corporation, Ltd.（CQC）投資調査部が情報提供を目的として作成したものです。特定の金融商品の売買を推奨するものではありません。掲載データは信頼できると判断した情報に基づいておりますが、その正確性・完全性を保証するものではありません。本資料の無断転用・転載はご遠慮ください。© 2026 Capital Quest Corporation, Ltd.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
