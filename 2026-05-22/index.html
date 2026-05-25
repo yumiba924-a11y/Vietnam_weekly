@@ -268,10 +268,10 @@
 
   .hero-label {
     font-family: var(--font-sans-en);
-    font-size:26px;
+    font-size: clamp(13px, 1.8vw, 26px);
     letter-spacing: 0.3em;
     color: var(--vn-gold);
-    margin-bottom: 36px;
+    margin-bottom: clamp(18px, 3vw, 36px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,7 +281,7 @@
   .hero-label::before {
     content: '';
     display: block;
-    width: 60px;
+    width: clamp(28px, 5vw, 60px);
     height: 1px;
     background: var(--vn-gold);
   }
@@ -289,18 +289,18 @@
   .hero-label::after {
     content: '';
     display: block;
-    width: 60px;
+    width: clamp(28px, 5vw, 60px);
     height: 1px;
     background: var(--vn-gold);
   }
 
   .hero-title {
     font-family: var(--font-sans-en);
-    font-size:200px;
+    font-size: clamp(44px, 10.5vw, 200px);
     font-weight: 900;
     line-height: 1;
     color: var(--white);
-    margin-bottom: 24px;
+    margin-bottom: clamp(16px, 2.4vw, 24px);
     letter-spacing: -0.03em;
     white-space: nowrap;
   }
@@ -313,16 +313,17 @@
 
   .hero-subtitle {
     font-family: var(--font-mincho);
-    font-size:42px;
+    font-size: clamp(18px, 3.2vw, 42px);
     font-weight: 400;
     color: rgba(255,255,255,0.55);
-    margin-bottom: 80px;
+    margin-bottom: clamp(36px, 6vw, 80px);
     letter-spacing: 0.02em;
   }
 
   .hero-kpi-row {
     display: flex;
-    gap: 96px;
+    flex-wrap: wrap;
+    gap: clamp(20px, 4vw, 96px);
     align-items: flex-start;
     justify-content: center;
     width: 100%;
@@ -331,27 +332,26 @@
   .hero-kpi {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    flex: 1;
-    max-width: 520px;
+    gap: clamp(8px, 1.2vw, 14px);
+    flex: 1 1 240px;
+    min-width: 220px;
+    max-width: 480px;
   }
 
   .hero-kpi-label {
     font-family: var(--font-sans-en);
-    font-size:24px;
-    letter-spacing: 0.22em;
+    font-size: clamp(12px, 1.4vw, 24px);
+    letter-spacing: 0.18em;
     color: rgba(255,255,255,0.55);
     text-transform: uppercase;
-    white-space: nowrap;
   }
 
   .hero-kpi-value {
     font-family: var(--font-mincho);
-    font-size:84px;
+    font-size: clamp(30px, 4.4vw, 84px);
     font-weight: 700;
     color: var(--white);
-    line-height: 1;
-    white-space: nowrap;
+    line-height: 1.08;
   }
 
   .hero-kpi-value.positive { color: #4DFFAA; }
@@ -359,9 +359,9 @@
 
   .hero-kpi-sub {
     font-family: var(--font-sans-en);
-    font-size:24px;
+    font-size: clamp(12px, 1.4vw, 22px);
     color: rgba(255,255,255,0.5);
-    white-space: nowrap;
+    line-height: 1.5;
   }
 
   .hero-divider {
@@ -369,6 +369,12 @@
     height: 110px;
     background: rgba(255,255,255,0.18);
     margin-top: 36px;
+  }
+
+  /* 狭い画面ではKPIを縦積みにし、装飾の縦線を隠す（見切れ防止） */
+  @media (max-width: 1024px) {
+    .hero-divider { display: none; }
+    .hero-kpi { flex-basis: 100%; max-width: 460px; }
   }
 
   /* ── SECTION COMMON ── */
@@ -1296,7 +1302,7 @@
         <div class="hero-divider"></div>
         <div class="hero-kpi">
           <div class="hero-kpi-label">VN-Index 終値（5/22）</div>
-          <div class="hero-kpi-value negative">1,877.1 pt</div>
+          <div class="hero-kpi-value negative">1,877.1&nbsp;pt</div>
           <div class="hero-kpi-sub">前週比 −44.5pt / 1,900pt割れ</div>
         </div>
         <div class="hero-divider"></div>
