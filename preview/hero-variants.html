@@ -73,15 +73,12 @@ body{background:#0b0b0b;color:#fff;font-family:var(--sans-en)}
 .vc .kpi .v .mk{color:#cf6b60;font-size:0.6em;margin-right:0.14em;vertical-align:0.08em}
 .vc .kpi .s{color:rgba(255,255,255,0.45)}
 
-/* ═══ Variant D : シネマティック・ドキュメンタリー（白イタリック大文字＋白枠ラベル） ═══ */
+/* ═══ Variant D : シネマティック・ドキュメンタリー（白イタリック大文字＋白抜き透明ボックス） ═══ */
 .vd .hero-ov{background:linear-gradient(to bottom,rgba(0,0,0,0.42),rgba(0,0,0,0.22) 45%,rgba(0,0,0,0.7))}
+.vd .eyebrow{color:rgba(255,255,255,0.9)}
 .vd .title{color:#fff;font-style:italic;font-weight:700;letter-spacing:0.005em;text-transform:uppercase;text-shadow:0 2px 36px rgba(0,0,0,0.45)}
 .vd .title .w{color:#fff;margin-left:0.18em}
-.vd .boxlabel{display:inline-block;border:2px solid rgba(255,255,255,0.92);color:#fff;background:rgba(0,0,0,0.12);
-  font-family:var(--sans-en);letter-spacing:0.32em;text-transform:uppercase;
-  font-size:clamp(11px,1.5vw,19px);padding:9px 24px;margin-top:clamp(16px,2.4vw,26px)}
-.vd .ko{display:block;width:clamp(230px,36vw,480px);height:auto;margin:clamp(16px,2.4vw,26px) auto 0}
-.vd .subjp{font-family:var(--mincho);color:rgba(255,255,255,0.72);font-size:clamp(15px,2.2vw,28px);margin-top:16px}
+.vd .ko{display:block;width:clamp(290px,52vw,640px);height:auto;margin:clamp(18px,2.6vw,30px) auto 0}
 .vd .kpi .l{color:rgba(255,255,255,0.6)}
 .vd .kpi .v{color:#fff;text-shadow:0 2px 24px rgba(0,0,0,0.4)}
 .vd .kpi .v .mk{color:rgba(255,255,255,0.75);font-size:0.6em;margin-right:0.14em;vertical-align:0.08em}
@@ -156,18 +153,18 @@ body{background:#0b0b0b;color:#fff;font-family:var(--sans-en)}
   <div class="hero">
     <div class="hero-bg"></div><div class="hero-ov"></div>
     <div class="hero-in">
+      <div class="eyebrow">WEEKLY REPORT</div>
       <div class="title">Vietnam<span class="w">Weekly</span></div>
       <!-- 白抜き透明ボックス：白い半透明の箱に文字部分が透明の穴 → 背景写真が透ける（バッパ2行目方式） -->
-      <svg class="ko" viewBox="0 0 520 84" role="img" aria-label="Weekly Report">
+      <svg class="ko" viewBox="0 0 640 88" role="img" aria-label="ベトナム株式市場 週次レポート">
         <defs>
           <mask id="ko-mask">
-            <rect x="0" y="0" width="520" height="84" rx="2" fill="#fff"/>
-            <text x="260" y="57" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="9" fill="#000">WEEKLY REPORT</text>
+            <rect x="0" y="0" width="640" height="88" rx="2" fill="#fff"/>
+            <text x="320" y="58" text-anchor="middle" font-family="Hiragino Sans,Hiragino Kaku Gothic ProN,Yu Gothic,Meiryo,sans-serif" font-size="30" font-weight="700" letter-spacing="4" fill="#000">ベトナム株式市場 週次レポート</text>
           </mask>
         </defs>
-        <rect x="0" y="0" width="520" height="84" rx="2" fill="rgba(255,255,255,0.88)" mask="url(#ko-mask)"/>
+        <rect x="0" y="0" width="640" height="88" rx="2" fill="rgba(255,255,255,0.88)" mask="url(#ko-mask)"/>
       </svg>
-      <div class="subjp">ベトナム株式市場 週次レポート</div>
       <div class="kpis">
         <div class="kpi"><div class="l">VN-Index 週間騰落率</div><div class="v"><span class="mk">▼</span>2.31%</div><div class="s">前週 +0.33% / 高値圏から調整入り</div></div>
         <div class="kpi"><div class="l">VN-Index 終値（5/22）</div><div class="v">1,877.1&nbsp;pt</div><div class="s">前週比 −44.5pt / 1,900pt割れ</div></div>
