@@ -485,6 +485,20 @@
     color: var(--text-mid);
   }
 
+  /* 長文本文は両端揃え（誌面の右端を揃えて読みやすく） */
+  .narrative-lead,
+  .narrative-body,
+  .news-body,
+  .catalyst-desc,
+  .macro-desc,
+  .column-body,
+  .column-highlight,
+  .risk-statement,
+  .footer-disclaimer,
+  .justify-body {
+    text-align: justify;
+  }
+
   .stats-panel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1606,7 +1620,7 @@
 
     <div style="margin-top:48px;padding:32px 40px;background:white;border-left:4px solid var(--vn-gold);grid-column:1 / -1" class="reveal reveal-delay-3">
       <div style="font-family:var(--font-sans-en);font-size:15px;letter-spacing:0.15em;color:var(--text-light);margin-bottom:12px">ANALYST NOTE</div>
-      <div style="font-size:18px;line-height:1.9;color:var(--text-mid)">
+      <div class="justify-body" style="font-size:18px;line-height:1.9;color:var(--text-mid)">
         今週は<strong>前2週の主役だったコモディティ・エネルギーの巻き戻し</strong>が相場全体を押し下げた。エネルギーセクターは時価総額加重で<strong>−4.95%</strong>と全11セクター中で最弱（前週+18.21%からの急反落）、不動産（−4.30%）公益事業（−3.53%）素材（−2.90%）資本財（−2.68%）と景気敏感・大型が軒並み安。3週前に+27%へ急騰した電力設備のジェレックス電力（GEE）は−10.08%と続落、電力建設のVNE（−19.53%）は2週連続の最大下落で1ヶ月−28%、不動産大型のNVL（−10.40%）も売り継続。一方プラスは<strong>IT（+2.55%）一般消費財（+0.95%）</strong>のディフェンシブのみで、上昇銘柄は小型のNHT（+27.4%）OGC（+16.5%）等に限られた。指数は月曜のみ続伸後4日続落し週次−2.31%、1,900ptを割り込んだ。5/20には日中1,859ptまで急落・出来高10.79億株と最大商いで、調整局面入りが鮮明。
       </div>
       <div style="font-size:13px;line-height:1.7;color:var(--text-light);margin-top:16px;padding-top:14px;border-top:1px dashed rgba(0,0,0,0.1)">
@@ -1641,7 +1655,7 @@
 
           <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)">
             <div style="font-size:16px;color:var(--text-light);margin-bottom:8px">一般消費財・サービス（木工・家具・玩具製造）</div>
-            <div style="font-size:18px;line-height:1.8;color:var(--text-mid)">木製玩具・家具・工芸品の製造輸出を手がける消費財メーカー。下落一色の今週にあって<strong>週次+27.4%</strong>と全市場の最大値上がり銘柄、月次でも+25.8%と逆行高。内需・輸出消費系のディフェンシブ物色の象徴。ただし時価総額0.30兆VNDの極小型株で、流動性・値動きの荒さには十分な留意が必要。</div>
+            <div class="justify-body" style="font-size:18px;line-height:1.8;color:var(--text-mid)">木製玩具・家具・工芸品の製造輸出を手がける消費財メーカー。下落一色の今週にあって<strong>週次+27.4%</strong>と全市場の最大値上がり銘柄、月次でも+25.8%と逆行高。内需・輸出消費系のディフェンシブ物色の象徴。ただし時価総額0.30兆VNDの極小型株で、流動性・値動きの荒さには十分な留意が必要。</div>
           </div>
 
           <div style="margin-bottom:24px">
@@ -1663,7 +1677,7 @@
 
           <div style="background:var(--vn-gold-light);padding:16px;border-radius:4px;margin-top:16px">
             <div style="font-family:var(--font-sans-en);font-size:15px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">WHY NOW?</div>
-            <div style="font-size:16px;line-height:1.7;color:var(--text-dark)">市場全面安の中での逆行高。景気敏感・コモディティから内需ディフェンシブへの資金退避を象徴。ただし極小型株ゆえ過熱・反落リスクは大きく、トレンドの一般化には慎重を要する。</div>
+            <div class="justify-body" style="font-size:16px;line-height:1.7;color:var(--text-dark)">市場全面安の中での逆行高。景気敏感・コモディティから内需ディフェンシブへの資金退避を象徴。ただし極小型株ゆえ過熱・反落リスクは大きく、トレンドの一般化には慎重を要する。</div>
           </div>
         </div>
       </div>
@@ -1682,7 +1696,7 @@
 
           <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)">
             <div style="font-size:16px;color:var(--text-light);margin-bottom:8px">資本財・サービス（電線・電力設備）</div>
-            <div style="font-size:18px;line-height:1.8;color:var(--text-mid)">ジェレックス傘下の電線・変圧器・電力設備メーカー。<strong>3週前（5/4-5/8週）に+27.3%と全市場トップの急騰</strong>を演じた銘柄だが、以降2週続落（前週−5.5%→今週−10.1%）と典型的な「行って来い」。電力インフラ投資テーマで買われた後の利益確定・過熱調整の代表例で、コモディティ／インフラ相場の巻き戻しを象徴する。</div>
+            <div class="justify-body" style="font-size:18px;line-height:1.8;color:var(--text-mid)">ジェレックス傘下の電線・変圧器・電力設備メーカー。<strong>3週前（5/4-5/8週）に+27.3%と全市場トップの急騰</strong>を演じた銘柄だが、以降2週続落（前週−5.5%→今週−10.1%）と典型的な「行って来い」。電力インフラ投資テーマで買われた後の利益確定・過熱調整の代表例で、コモディティ／インフラ相場の巻き戻しを象徴する。</div>
           </div>
 
           <div style="margin-bottom:24px">
@@ -1704,7 +1718,7 @@
 
           <div style="background:rgba(218,37,29,0.08);padding:16px;border-radius:4px;margin-top:16px">
             <div style="font-family:var(--font-sans-en);font-size:15px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">WHY NOW?</div>
-            <div style="font-size:16px;line-height:1.7;color:var(--text-dark)">「急騰の翌週は反落」を地で行く展開。テーマ買いの過熱が剥落する局面で、月次ではなお+4.4%とプラス圏に残るため、調整余地が残存している可能性に注意。</div>
+            <div class="justify-body" style="font-size:16px;line-height:1.7;color:var(--text-dark)">「急騰の翌週は反落」を地で行く展開。テーマ買いの過熱が剥落する局面で、月次ではなお+4.4%とプラス圏に残るため、調整余地が残存している可能性に注意。</div>
           </div>
         </div>
       </div>
