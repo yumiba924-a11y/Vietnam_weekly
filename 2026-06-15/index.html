@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vietnam Weekly | CQC Capital Research & Investments</title>
+<link rel="canonical" href="https://yumiba924-a11y.github.io/Vietnam_weekly/2026-06-15/index.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CQC Vietnam Weekly">
+<meta property="og:title" content="Vietnam Weekly — 6/8〜6/12｜VN-Index −2.57%、4週続落・全面安、Vingroup御三家下落で不動産3週連続最弱">
+<meta property="og:description" content="VN-Index 週次 −2.57%(4週続落)、6/12終値1,791.65pt。月曜−2.63%のギャップダウンが下げのほぼ全て。Vingroup御三家(VIC−5.56%/VHM−8.75%/VRE−8.33%)下落で不動産−5.65%・3週連続最弱、11中10セクター安。振り子は公益+0.23%首位で4週連続も全面安に傾く。米USTR Section 301公聴会7/7が焦点。Capital Quest Corporation, Ltd. 投資調査部 週次レポート。">
+<meta property="og:image" content="https://yumiba924-a11y.github.io/Vietnam_weekly/2026-06-15/vn_photos/photo01.png">
+<meta property="og:url" content="https://yumiba924-a11y.github.io/Vietnam_weekly/2026-06-15/index.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vietnam Weekly — 6/8〜6/12｜CQC投資調査部">
+<meta name="twitter:description" content="VN-Index 週次 −2.57%。4週続落・全面安、Vingroup御三家下落で不動産−5.65%・3週連続最弱、公益+0.23%首位で振り子4週連続。">
+<meta name="twitter:image" content="https://yumiba924-a11y.github.io/Vietnam_weekly/2026-06-15/vn_photos/photo01.png">
+<style>
+  :root {
+    --font-mincho: "Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","YuMincho","ＭＳ 明朝",serif;
+    --font-gothic: "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium",YuGothic,"Yu Gothic","Meiryo UI",Meiryo,"Noto Sans JP",system-ui,-apple-system,sans-serif;
+    --font-sans-en: "Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+    --cri-green: #00492C;
+    --cri-green-dark: #002D1A;
+    --cri-green-light: #1a6641;
+    --vn-red: #DA251D;
+    --vn-gold: #F5C400;
+    --vn-gold-light: #FDE96B;
+    --white: #FFFFFF;
+    --cream: #FAF8F2;
+    --cream-dark: #F0EBE0;
+    --text-dark: #1A1A1A;
+    --text-mid: #4A4A4A;
+    --text-light: #888;
+    --up-color: #00A86B;
+    --down-color: #DA251D;
+    --border: rgba(0,73,44,0.12);
+  }
+
+  /* ── NUMBER FONT: Helvetica (CQC HP準拠) ── */
+  .hero-kpi-value,
+  .stat-value,
+  .sector-return,
+  .mover-return,
+  .macro-value,
+  .risk-stat-val,
+  .fact-number,
+  .footer-date,
+  .hero-kpi-value.positive,
+  .hero-kpi-value.negative {
+    font-family: var(--font-sans-en) !important;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── 日本語見出し: 明朝（CQC HP準拠） ── */
+  .column-em {
+    font-family: var(--font-mincho) !important;
+    letter-spacing: -0.02em;
+  }
+
+  .ext-val {
+    font-family: var(--font-sans-en) !important;
+    font-weight: 600;
+  }
+
+
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-mincho);
+    background: var(--white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: var(--cri-green-dark);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── SLIDESHOW ── */
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    animation: kenBurns 8s ease-out forwards;
+  }
+
+  .hero-slide.active {
+    opacity: 1;
+  }
+
+  @keyframes kenBurns {
+    0%   { transform: scale(1.0) translate(0%, 0%); }
+    100% { transform: scale(1.07) translate(-1%, -0.5%); }
+  }
+
+  @keyframes kenBurnsAlt {
+    0%   { transform: scale(1.07) translate(-1%, 0%); }
+    100% { transform: scale(1.0) translate(0.5%, -0.5%); }
+  }
+
+  .hero-slide:nth-child(even) {
+    animation-name: kenBurnsAlt;
+  }
+
+  /* ── VIDEO ── */
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .hero-video.active { opacity: 1; }
+
+  /* ── SLIDE DOTS ── */
+  .hero-dots {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+  }
+
+  .hero-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .hero-dot.active {
+    background: var(--vn-gold);
+    width: 24px;
+    border-radius: 3px;
+  }
+
+  /* ── SLIDE ARROWS ── */
+  .hero-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.7);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size:22px;
+    transition: background 0.2s, color 0.2s;
+    user-select: none;
+  }
+
+  .hero-arrow:hover {
+    background: rgba(245,196,0,0.2);
+    color: var(--vn-gold);
+    border-color: var(--vn-gold);
+  }
+
+  .hero-arrow-left  { left: 32px; }
+  .hero-arrow-right { right: 32px; }
+
+  /* ── SLIDE COUNTER ── */
+  .hero-counter {
+    position: absolute;
+    bottom: 140px;
+    right: 48px;
+    z-index: 20;
+    font-family: var(--font-sans-en);
+    font-size:17px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.1em;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    /* 明るい素材を活かす：中央はほぼ素のまま、上下だけ薄く締めて文字を守る */
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,0.26) 0%, rgba(0,0,0,0.06) 24%, rgba(0,0,0,0.06) 56%, rgba(0,0,0,0.50) 100%);
+  }
+
+  .hero-diagonal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: var(--white);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  }
+
+  .hero-nav {
+    position: relative;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 80px;
+  }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .hero-logo-img {
+    height: 64px;
+    width: auto;
+    display: block;
+  }
+
+  .logo-text {
+    color: var(--white);
+    font-size:18px;
+    letter-spacing: 0.15em;
+    font-family: var(--font-sans-en);
+    opacity: 0.7;
+    line-height: 1.6;
+    font-weight: 400;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 18px;
+  }
+
+  .hero-date-badge {
+    background: rgba(245,196,0,0.15);
+    border: 1px solid rgba(245,196,0,0.3);
+    color: var(--vn-gold);
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.1em;
+    padding: 8px 20px;
+    border-radius: 2px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 15;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(40px, 6vh, 90px) 60px clamp(120px, 16vh, 170px);
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 1680px;
+    width: 100%;
+  }
+
+  /* 今週のテーマ（単独KPI）— タイトル群のすぐ下に中央配置 */
+  .hero-theme {
+    margin-top: clamp(36px, 6vh, 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(8px, 1.2vw, 14px);
+  }
+
+  .hero-label {
+    font-family: var(--font-sans-en);
+    font-size: clamp(13px, 1.8vw, 26px);
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: clamp(18px, 3vw, 36px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.55), 0 0 2px rgba(0,0,0,0.4);
+  }
+
+  .hero-label::before {
+    content: '';
+    display: block;
+    width: clamp(28px, 5vw, 60px);
+    height: 1px;
+    background: currentColor;
+  }
+
+  .hero-label::after {
+    content: '';
+    display: block;
+    width: clamp(28px, 5vw, 60px);
+    height: 1px;
+    background: currentColor;
+  }
+
+  .hero-title {
+    font-family: var(--font-sans-en);
+    font-size: clamp(42px, 9.6vw, 172px);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: clamp(14px, 2vw, 22px);
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.45), 0 1px 4px rgba(0,0,0,0.35);
+  }
+
+  .hero-title .red { margin-left: 0.18em; }
+
+  .hero-title .red {
+    color: #fff;
+  }
+
+  /* D案：白抜き透明ボックス（サブタイトル） */
+  .hero-ko {
+    display: block;
+    width: clamp(320px, 64vw, 760px);
+    height: auto;
+    margin: clamp(18px, 2.6vw, 30px) auto 0;
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.4));
+  }
+
+  .hero-subtitle {
+    font-family: var(--font-mincho);
+    font-size: clamp(18px, 3.2vw, 42px);
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: clamp(36px, 6vw, 80px);
+    letter-spacing: 0.02em;
+  }
+
+  .hero-kpi-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(20px, 4vw, 96px);
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-kpi {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 1.2vw, 14px);
+    flex: 1 1 240px;
+    min-width: 220px;
+    max-width: 480px;
+  }
+
+  .hero-kpi-label {
+    font-family: var(--font-sans-en);
+    font-size: clamp(15px, 1.8vw, 30px);
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.88);
+    text-transform: uppercase;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.5);
+  }
+
+  .hero-kpi-value {
+    font-family: var(--font-mincho);
+    font-size: clamp(30px, 4.4vw, 84px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.08;
+  }
+
+  .hero-kpi-value.positive { color: #4DFFAA; }
+  .hero-kpi-value.negative { color: var(--vn-red); }
+
+  .hero-kpi-sub {
+    font-family: var(--font-sans-en);
+    font-size: clamp(14px, 1.7vw, 28px);
+    color: rgba(255,255,255,0.88);
+    line-height: 1.5;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.5);
+  }
+
+  .hero-divider {
+    width: 1px;
+    height: 110px;
+    background: rgba(255,255,255,0.18);
+    margin-top: 36px;
+  }
+
+  /* 狭い画面ではKPIを縦積みにし、装飾の縦線を隠す（見切れ防止） */
+  @media (max-width: 1024px) {
+    .hero-divider { display: none; }
+    .hero-kpi { flex-basis: 100%; max-width: 460px; }
+  }
+
+  /* ── SECTION COMMON ── */
+  section {
+    position: relative;
+  }
+
+  .section-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 100px 80px;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.3em;
+    color: var(--cri-green);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--vn-gold);
+  }
+
+  .section-title {
+    font-family: var(--font-mincho);
+    font-size:48px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--cri-green-dark);
+    margin-bottom: 12px;
+  }
+
+  .section-title-en {
+    font-family: var(--font-mincho);
+    font-size:22px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 52px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── SECTION 1: WEEKLY SUMMARY ── */
+  .summary-section {
+    background: var(--white);
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .narrative-block {
+    padding-right: 0;
+    padding-bottom: 40px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .narrative-lead {
+    font-size:26px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+    border-left: 3px solid var(--vn-red);
+    padding-left: 20px;
+  }
+
+  .narrative-body {
+    font-size:22px;
+    line-height: 2;
+    color: var(--text-mid);
+  }
+
+  /* 長文本文は両端揃え（誌面の右端を揃えて読みやすく） */
+  .narrative-lead,
+  .narrative-body,
+  .news-body,
+  .catalyst-desc,
+  .column-body,
+  .column-highlight,
+  .risk-statement,
+  .footer-disclaimer,
+  .justify-body {
+    text-align: justify;
+  }
+
+  .stats-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 24px 26px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--cri-green);
+    background: var(--cream);
+  }
+
+  .stats-panel .daily-chart {
+    grid-column: 1 / -1;
+  }
+
+  .stat-card.highlight {
+    background: var(--cri-green-dark);
+    border-color: var(--cri-green-dark);
+    border-left-color: var(--vn-gold);
+  }
+
+  .stat-label {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.1em;
+    color: var(--text-light);
+  }
+
+  .stat-card.highlight .stat-label {
+    color: rgba(255,255,255,0.5);
+  }
+
+  .stat-value {
+    font-family: var(--font-mincho);
+    font-size:34px;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .stat-card.highlight .stat-value {
+    color: var(--vn-gold);
+  }
+
+  .stat-value.pos { color: var(--up-color); }
+  .stat-value.neg { color: var(--down-color); }
+
+  /* Daily bars chart */
+  .daily-chart {
+    margin-top: 32px;
+  }
+
+  .daily-chart-title {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.2em;
+    color: var(--text-light);
+    margin-bottom: 16px;
+  }
+
+  .day-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+
+  .day-bar-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .day-bar-val {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    font-weight: 500;
+  }
+
+  .day-bar {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+    transition: all 0.4s ease;
+    min-height: 4px;
+  }
+
+  .day-bar.pos { background: var(--up-color); }
+  .day-bar.neg { background: var(--down-color); }
+
+  .day-label {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    color: var(--text-light);
+    margin-top: 6px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── SECTOR SECTION ── */
+  .sector-section {
+    background: var(--cri-green-dark);
+    color: var(--white);
+  }
+
+  .sector-section .section-eyebrow { color: var(--vn-gold); }
+  .sector-section .section-title { color: var(--white); }
+  .sector-section .section-title-en { color: rgba(255,255,255,0.3); }
+
+  .sector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+
+  .sector-card {
+    padding: 28px 24px;
+    background: rgba(255,255,255,0.04);
+    border-top: 2px solid transparent;
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sector-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(245,196,0,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .sector-card:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  .sector-card.top-performer {
+    border-top-color: var(--vn-gold);
+    background: rgba(245,196,0,0.06);
+  }
+
+  .sector-name {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .sector-return {
+    font-family: var(--font-mincho);
+    font-size:38px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .sector-return.pos { color: #4DFFAA; }
+  .sector-return.neg { color: #FF6B6B; }
+
+  .sector-bar-bg {
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.08);
+    margin-top: 16px;
+  }
+
+  .sector-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+  }
+
+  .sector-bar-fill.pos { background: #4DFFAA; }
+  .sector-bar-fill.neg { background: #FF6B6B; }
+
+  /* ── MOVERS SECTION ── */
+  .movers-section {
+    background: var(--cream);
+  }
+
+  .movers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .movers-col-title {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.2em;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .movers-col-title.gainers { color: var(--up-color); }
+  .movers-col-title.losers { color: var(--down-color); }
+
+  .mover-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    background: var(--white);
+    margin-bottom: 8px;
+    border-left: 3px solid transparent;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+
+  .mover-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  .mover-card.gainer { border-left-color: var(--up-color); }
+  .mover-card.loser { border-left-color: var(--down-color); }
+
+  .mover-info { flex: 1; }
+
+  .mover-name-jp {
+    font-size:22px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+  }
+
+  .mover-ticker {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    color: var(--text-light);
+    letter-spacing: 0.1em;
+  }
+
+  .mover-sector-badge {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    background: var(--cream-dark);
+    color: var(--text-light);
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.08em;
+    margin-left: 8px;
+  }
+
+  .mover-return {
+    font-family: var(--font-mincho);
+    font-size:30px;
+    font-weight: 700;
+  }
+
+  .mover-return.pos { color: var(--up-color); }
+  .mover-return.neg { color: var(--down-color); }
+
+  /* ── NEWS SECTION ── */
+  .news-section {
+    background: var(--cream);
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .news-card {
+    background: var(--white);
+    padding: 36px 32px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .news-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cri-green), var(--vn-gold));
+  }
+
+  .news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,73,44,0.1);
+  }
+
+  .news-card.featured {
+    grid-row: span 1;
+  }
+
+  .news-tag {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    letter-spacing: 0.2em;
+    color: var(--cri-green);
+    background: rgba(0,73,44,0.06);
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .news-headline {
+    font-family: var(--font-mincho);
+    font-size:26px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-dark);
+    margin-bottom: 14px;
+  }
+
+  .news-card.featured .news-headline {
+    font-size:32px;
+  }
+
+  .news-body {
+    font-size:21px;
+    line-height: 1.9;
+    color: var(--text-mid);
+  }
+
+  /* ── CATALYST SECTION ── */
+  .catalyst-section {
+    background: var(--white);
+  }
+
+  .catalyst-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-left: 2px solid var(--border);
+    padding-left: 40px;
+    margin-left: 20px;
+  }
+
+  .catalyst-item {
+    position: relative;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .catalyst-item::before {
+    content: '';
+    position: absolute;
+    left: -49px;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--vn-gold);
+    border: 2px solid var(--white);
+    box-shadow: 0 0 0 2px var(--cri-green);
+  }
+
+  .catalyst-date {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    color: var(--cri-green);
+    letter-spacing: 0.05em;
+    padding-top: 2px;
+  }
+
+  .catalyst-title {
+    font-size:23px;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .catalyst-desc {
+    font-size:21px;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+
+  .catalyst-impact {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin-top: 4px;
+  }
+
+  .catalyst-impact.high {
+    background: rgba(218,37,29,0.1);
+    color: var(--vn-red);
+  }
+
+  .catalyst-impact.mid {
+    background: rgba(245,196,0,0.15);
+    color: #9A7C00;
+  }
+
+  .catalyst-impact.low {
+    background: rgba(0,73,44,0.08);
+    color: var(--cri-green);
+  }
+
+  /* ── RISK SECTION ── */
+  .risk-section {
+    background: var(--cri-green);
+    padding: 60px 80px;
+  }
+
+  .risk-inner {
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 48px;
+  }
+
+  .risk-label {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .risk-statement {
+    font-family: var(--font-mincho);
+    font-size:30px;
+    color: var(--white);
+    line-height: 1.6;
+    max-width: none;
+  }
+
+  .risk-stat-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .risk-stat {
+    text-align: center;
+  }
+
+  .risk-stat-val {
+    font-family: var(--font-mincho);
+    font-size:42px;
+    font-weight: 700;
+    color: var(--vn-gold);
+    display: block;
+  }
+
+  .risk-stat-label {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.4);
+    display: block;
+    margin-top: 4px;
+    text-transform: uppercase;
+  }
+
+  /* ── COLUMN SECTION ── */
+  .column-section {
+    background: var(--cri-green-dark);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .column-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 90% 50%, rgba(245,196,0,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 10% 20%, rgba(218,37,29,0.08) 0%, transparent 50%);
+  }
+
+  .column-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 100px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .column-left .section-eyebrow { color: var(--vn-gold); }
+  .column-left .section-title { color: var(--white); font-size:58px; }
+
+  .column-em {
+    font-family: var(--font-mincho);
+    font-size:96px;
+    font-weight: 900;
+    color: var(--vn-gold);
+    line-height: 1.05;
+    margin-bottom: 18px;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
+  .column-subtitle {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 40px;
+  }
+
+  .column-body {
+    font-size:23px;
+    line-height: 2;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 24px;
+  }
+
+  .column-highlight {
+    padding: 24px 28px;
+    border-left: 3px solid var(--vn-gold);
+    background: rgba(245,196,0,0.06);
+    font-size:22px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.85);
+    }
+
+  .column-right-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .fact-card {
+    padding: 24px 28px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(245,196,0,0.15);
+    position: relative;
+  }
+
+  .fact-number {
+    font-family: var(--font-mincho);
+    font-size:48px;
+    font-weight: 700;
+    color: var(--vn-gold);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .fact-label {
+    font-size:21px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--cri-green-dark);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 48px 80px;
+  }
+
+  .footer-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .footer-brand {
+    margin-bottom: 12px;
+  }
+
+  .footer-brand img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+
+  .footer-dept {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 16px;
+  }
+
+  .footer-disclaimer {
+    font-size:19px;
+    color: rgba(255,255,255,0.25);
+    line-height: 1.8;
+    max-width: 1360px;
+    margin: 28px auto 0;
+  }
+
+  .footer-meta {
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .footer-issue {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 4px;
+  }
+
+  .footer-date {
+    font-family: var(--font-mincho);
+    font-size:32px;
+    color: var(--vn-gold);
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ── NUMBER COUNTER ── */
+  .count-up {
+    display: inline-block;
+  }
+
+  /* ── CALENDAR SECTION ── */
+  .calendar-section { background: var(--cream); }
+  .cal-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 16px; }
+  .cal-col-header { font-family: var(--font-sans-en); font-size:20px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 12px 20px; margin-bottom: 24px; border-radius: 2px; }
+  .cal-col-header.vn { background: var(--cri-green-dark); color: var(--vn-gold); }
+  .cal-col-header.gl { background: var(--text-mid); color: var(--white); }
+  .cal-group { margin-bottom: 28px; }
+  .cal-group-label { font-family: var(--font-sans-en); font-size:18px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  .cal-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px; margin-bottom: 4px; background: var(--white); border-left: 3px solid transparent; font-size:20px; line-height: 1.7; transition: background 0.2s; }
+  .cal-item:hover { background: var(--cream-dark); }
+  .cal-item.done { opacity: 0.42; border-left-color: var(--text-light); }
+  .cal-item.high { border-left-color: var(--vn-red); }
+  .cal-item.mid { border-left-color: var(--vn-gold); }
+  .cal-item.watch { border-left-color: var(--text-light); }
+  .cal-date { font-family: var(--font-sans-en); font-size:18px; color: var(--text-light); white-space: nowrap; width: 80px; flex-shrink: 0; padding-top: 2px; }
+  .cal-body { flex: 1; color: var(--text-dark); }
+  .cal-note { display: block; font-size:18px; color: var(--text-light); line-height: 1.6; }
+  .cal-badge { font-family: var(--font-sans-en); font-size:17px; padding: 2px 8px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; align-self: flex-start; margin-top: 2px; }
+  .done-badge { background: var(--cream-dark); color: var(--text-light); }
+  .high-badge { background: rgba(218,37,29,0.10); color: var(--vn-red); }
+  .mid-badge { background: rgba(245,196,0,0.15); color: #8a6d00; }
+  .watch-badge { background: var(--cream-dark); color: var(--text-mid); }
+
+  /* spotlight 2カラム（モバイルで1カラムに落とすためクラス化） */
+  .spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+  }
+
+  /* ───────── モバイル最適化（スマホ） ───────── */
+  @media (max-width: 768px) {
+    /* セクション余白・見出し */
+    .section-inner { padding: 56px 20px; }
+    .section-title { font-size: 30px; }
+    .section-title-en { font-size: 16px; margin-bottom: 32px; }
+    .section-eyebrow { font-size: 14px; letter-spacing: 0.2em; }
+
+    /* ヒーロー上部（ロゴ＋日付バッジ） */
+    .hero-nav { flex-wrap: wrap; gap: 12px; padding: 20px; }
+    .hero-logo-img { height: 38px; }
+    .logo-text { font-size: 13px; padding-left: 12px; line-height: 1.4; }
+    .hero-date-badge { font-size: 13px; padding: 6px 12px; }
+
+    /* ヒーロー本文 */
+    .hero-content { padding-left: 20px; padding-right: 20px; padding-bottom: clamp(80px, 14vh, 110px); }
+    .hero-label { font-size: 12px; letter-spacing: 0.2em; }
+    .hero-title { font-size: clamp(30px, 9vw, 56px); }
+    .hero-ko { width: min(92vw, 520px); }
+    .hero-kpi-label { font-size: 14px; }
+    .hero-kpi-sub { font-size: 14px; }
+    .hero-arrow { display: none; }
+
+    /* グリッドを縦に */
+    .stats-panel { grid-template-columns: 1fr; }
+    .movers-grid { grid-template-columns: 1fr; gap: 28px; }
+    .spotlight-grid { grid-template-columns: 1fr; gap: 28px; }
+    .column-inner { grid-template-columns: 1fr; gap: 36px; padding: 56px 20px; }
+    .cal-columns { grid-template-columns: 1fr; gap: 24px; }
+    .sector-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sector-card div[style*="nowrap"] { white-space: normal !important; }
+
+    /* カタリスト：タイムライン装飾をやめ縦積み */
+    .catalyst-list { border-left: none; padding-left: 0; margin-left: 0; }
+    .catalyst-item { grid-template-columns: 1fr; gap: 6px; }
+    .catalyst-item::before { display: none; }
+
+    /* リスク */
+    .risk-section { padding: 48px 20px; }
+    .risk-statement { font-size: 21px; }
+    .risk-stat-group { flex-direction: column; gap: 18px; }
+
+    /* フッター */
+    .footer { padding: 40px 20px; }
+    .footer-inner { flex-direction: column; gap: 24px; }
+    .footer-meta { text-align: left; }
+    .footer-disclaimer { font-size: 15px; margin-top: 20px; }
+
+    /* 本文・見出しフォント */
+    .narrative-lead { font-size: 19px; }
+    .narrative-body { font-size: 17px; }
+    .news-body { font-size: 16px; }
+    .news-headline { font-size: 21px; }
+    .news-card.featured .news-headline { font-size: 21px !important; }
+    .column-em { font-size: 38px; white-space: normal; }
+    .column-subtitle { font-size: 16px; }
+    .column-body { font-size: 17px; }
+    .column-highlight { font-size: 17px; }
+    .fact-number { font-size: 38px; }
+    .mover-name-jp { font-size: 17px; }
+  }
+
+  @media (max-width: 420px) {
+    .hero-title { font-size: 28px; }
+    .hero-ko { width: 94vw; }
+    .section-title { font-size: 26px; }
+    .sector-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <!-- 動画レイヤー（動画がある場合のみ表示） -->
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline></video>
+
+  <!-- 写真スライドショーレイヤー（動画がない場合） -->
+  <div id="heroSlideshow"></div>
+
+  <div class="hero-bg-pattern"></div>
+
+  <!-- 矢印 -->
+  <div class="hero-arrow hero-arrow-left" id="arrowLeft">&#8592;</div>
+  <div class="hero-arrow hero-arrow-right" id="arrowRight">&#8594;</div>
+
+  <!-- ドット＋カウンター -->
+  <div class="hero-dots" id="heroDots"></div>
+  <div class="hero-counter" id="heroCounter"></div>
+
+  <div class="hero-diagonal"></div>
+
+  <nav class="hero-nav">
+    <a class="hero-logo" href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" title="Capital Quest Corporation, Ltd. 公式サイトへ" style="text-decoration:none;cursor:pointer">
+      <img src="./assets/cqc_logo.png" alt="CQC — Capital Quest Corporation" class="hero-logo-img">
+      <div class="logo-text">Capital Quest Corporation<br>投資調査部</div>
+    </a>
+    <div class="hero-date-badge">VOL.2026 — 6/8〜6/12</div>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-label">WEEKLY INTELLIGENCE REPORT</div>
+      <div class="hero-title">
+        Vietnam <span class="red">Weekly</span>
+      </div>
+      <!-- 白抜き透明ボックス：白い半透明の箱に文字部分が透明の穴 → 背景写真が透ける -->
+      <svg class="hero-ko" viewBox="0 0 760 96" role="img" aria-label="ベトナム株式市場 週次レポート">
+        <defs>
+          <mask id="hero-ko-mask">
+            <rect x="0" y="0" width="760" height="96" rx="2" fill="#fff"/>
+            <text x="380" y="64" text-anchor="middle" font-family="Hiragino Sans,Hiragino Kaku Gothic ProN,Yu Gothic,Meiryo,sans-serif" font-size="42" font-weight="700" letter-spacing="4" fill="#000">ベトナム株式市場 週次レポート</text>
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="760" height="96" rx="2" fill="rgba(255,255,255,0.88)" mask="url(#hero-ko-mask)"/>
+      </svg>
+    </div>
+
+    <div class="hero-theme">
+      <div class="hero-kpi-label">今週号のテーマ</div>
+      <div class="hero-kpi-value negative" style="font-size:clamp(28px,3.8vw,62px);white-space:nowrap">振り子は4週、しかし全面安へ</div>
+      <div class="hero-kpi-sub">VN-Index −2.57%で4週続落。公益+0.23%のみプラス、不動産−5.65%で3週連続最弱、11中10セクター安</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ SECTION 1: WEEKLY SUMMARY ═══ -->
+<section class="summary-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Market Summary</div>
+    <div class="section-title reveal">先週の相場概況</div>
+    <div class="section-title-en reveal">Weekly Market Overview</div>
+
+    <div class="summary-grid">
+      <div class="narrative-block reveal">
+        <div class="narrative-lead">
+          VN-Indexは週次<strong>−2.57%</strong>と4週連続マイナス、6/12（金）に終値1,791.65ptで引けた。前週末(1,838.90pt)から−47.25pt。下げの主因は<strong>月曜6/8の−2.63%ギャップダウン</strong>——寄り付き1,838.90ptから一気に売られ、これが週間下落幅のほぼ全てを占めた。火・水は小反発(+0.14%/+0.59%)で下げ止まったものの、木金は再び小幅安(−0.28%/−0.39%)。米USTR強制労働Section 301（12.5%関税提案）のoverhangが続くなか、3週続いた下落基調が4週目に入り、下げ幅はむしろ拡大した。
+        </div>
+        <div class="narrative-body">
+          先週の物色は<strong>「主役交代の振り子」が4週連続</strong>で続いた。前週首位の情報技術は今週<strong>−2.00%</strong>へ転落、逆に前週マイナス転落していた公益事業が<strong>+0.23%で唯一のプラス・首位</strong>に復帰した。だが今週は<strong>11セクター中10がマイナス</strong>で、振り子はもはや地合いを支えきれなかった。象徴は<strong>不動産−5.65%（3週連続最弱・下げ加速）</strong>——時価総額最大のVingroup御三家が揃って急落し（<strong>VIC −5.56%・VHM −8.75%・VRE −8.33%</strong>）、巨大な指数ウェイトのまま下げて相場を直接押し下げた。Gelex系のGEX −7.81%・GEE −8.17%も資本財・サービス(−2.03%)の重し。一方で個別の振り子は健在で、前週軟調圏からの戻りとして<strong>CII +7.10%</strong>（時価総額11.6兆VND、出来高週内最大級）など内需・インフラ関連の反発も散発した。テーマ買いの循環は続いたが、大型の下落が循環を呑み込み、週を通じて全面安色が強まった一週だった。
+        </div>
+      </div>
+
+      <div class="stats-panel">
+        <div class="stat-card highlight reveal">
+          <div>
+            <div class="stat-label">VN-Index 週間騰落率</div>
+          </div>
+          <div class="stat-value neg">−2.57%</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-label">公益事業（首位）</div>
+          <div class="stat-value pos">+0.23%</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-label">不動産（最弱）</div>
+          <div class="stat-value neg">−5.65%</div>
+        </div>
+
+        <!-- Daily bar chart (LSEG .VNI daily) -->
+        <div class="daily-chart reveal reveal-delay-3">
+          <div class="daily-chart-title">DAY-BY-DAY PERFORMANCE (6/8–6/12)</div>
+          <div class="day-bars">
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">−2.63%</div>
+              <div class="day-bar-bg"><div class="day-bar neg" style="height:100%"></div></div>
+              <div class="day-label">月</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">+0.14%</div>
+              <div class="day-bar-bg"><div class="day-bar pos" style="height:5%"></div></div>
+              <div class="day-label">火</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">+0.59%</div>
+              <div class="day-bar-bg"><div class="day-bar pos" style="height:22%"></div></div>
+              <div class="day-label">水</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">−0.28%</div>
+              <div class="day-bar-bg"><div class="day-bar neg" style="height:11%"></div></div>
+              <div class="day-label">木</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">−0.39%</div>
+              <div class="day-bar-bg"><div class="day-bar neg" style="height:15%"></div></div>
+              <div class="day-label">金</div>
+            </div>
+          </div>
+          <div style="font-size:12px;color:var(--text-light);margin-top:10px;line-height:1.6">※ 日次は .VNI 終値ベース（出所: LSEG, 6/8→6/12）。下げは月曜6/8の−2.63%ギャップダウンにほぼ集約。週内最大商いは6/8(月)の6.13億株（急落日に商い集中）、週内ザラ場安値は6/9(火)の1,780.71pt（終値ベース週内安値は6/8(月) 1,790.53pt）。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SECTION 2: SECTORS ═══ -->
+<section class="sector-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Sector Performance</div>
+    <div class="section-title reveal">セクター騰落率</div>
+    <div class="section-title-en reveal">Weekly Sector Returns</div>
+
+    <div class="sector-grid">
+      <div class="sector-card top-performer reveal ">
+        <div class="sector-name">公益事業</div>
+        <div class="sector-return pos">+0.23%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">先週−1.77%から今週唯一のプラス・振り子で首位復帰</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill pos" style="width:4%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-1">
+        <div class="sector-name">ヘルスケア</div>
+        <div class="sector-return neg">−0.21%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">ディフェンシブで相対耐性、小幅安にとどまる</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:4%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-2">
+        <div class="sector-name">生活必需品</div>
+        <div class="sector-return neg">−0.39%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">VNM+1.03%等 内需ディフェンシブが下支え</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:7%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-3">
+        <div class="sector-name">金融</div>
+        <div class="sector-return neg">−0.88%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">大型銀行はVCB−0.16%・ACB+1.34%等 底堅く相対健闘</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:16%"></div></div>
+      </div>
+      <div class="sector-card reveal ">
+        <div class="sector-name">素材</div>
+        <div class="sector-return neg">−1.25%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">HPG−2.32%・GVR+0.57%、まちまちで小幅安</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:22%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-1">
+        <div class="sector-name">情報技術</div>
+        <div class="sector-return neg">−2.00%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">先週首位+4.14%から−2.00%へ・FPT−2.00%で振り子</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:35%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-2">
+        <div class="sector-name">資本財・サービス</div>
+        <div class="sector-return neg">−2.03%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">Gelex系GEX−7.81%・GEE−8.17%が重し</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:36%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-3">
+        <div class="sector-name">エネルギー</div>
+        <div class="sector-return neg">−2.20%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">原油軟調でBSR−1.40%等、景気敏感に売り</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:39%"></div></div>
+      </div>
+      <div class="sector-card reveal ">
+        <div class="sector-name">コミュニケーション</div>
+        <div class="sector-return neg">−2.97%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">電気通信が反落、小型中心に下げ</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:53%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-1">
+        <div class="sector-name">一般消費財</div>
+        <div class="sector-return neg">−3.60%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">VPL−4.92%・PNJ−5.63%・MWG−2.05%が下押し</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:64%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-2">
+        <div class="sector-name">不動産</div>
+        <div class="sector-return neg">−5.65%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">3週連続最弱・VIC−5.56%/VHM−8.75%/VRE−8.33%</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:100%"></div></div>
+      </div>
+    </div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.45);margin-top:20px;line-height:1.7">※ セクター騰落率は LSEG GICS Sector分類・<strong>時価総額加重</strong>週次トータルリターン（TR.TotalReturn1Wk＝前金曜終値→当金曜終値、配当込）。<strong>構成銘柄シートからPython直計算</strong>（抜粋シートは加重リターン列にキャッシュ残留・破損があるため不使用、SKILL v2026.06に基づく）。前週レポートと算定基準を統一し WoW 比較可能。出所: LSEG VN_Weekly 2026/06/12。</div>
+  </div>
+</section>
+
+
+<!-- ═══ SECTION 3: MOVERS ═══ -->
+<section class="movers-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Individual Stocks</div>
+    <div class="section-title reveal">注目銘柄</div>
+    <div class="section-title-en reveal">Top Gainers & Losers</div>
+
+    <div class="movers-grid">
+      <div>
+        <div class="movers-col-title gainers reveal">▲ TOP GAINERS <span style="font-size:13px;color:rgba(255,255,255,0.45);font-weight:400;letter-spacing:0.05em;margin-left:8px">週次TR: 前金曜→当金曜・配当込</span></div>
+        <div class="mover-card gainer reveal">
+          <div class="mover-info">
+            <div class="mover-name-jp">ホンハ食品投資開発 <span class="mover-sector-badge">生活必需品</span></div>
+            <div class="mover-ticker">HSL · 週次</div>
+          </div>
+          <div class="mover-return pos">+31.43%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-1">
+          <div class="mover-info">
+            <div class="mover-name-jp">LDG投資 <span class="mover-sector-badge">不動産</span></div>
+            <div class="mover-ticker">LDG · 週次</div>
+          </div>
+          <div class="mover-return pos">+23.16%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-2">
+          <div class="mover-info">
+            <div class="mover-name-jp">3-2建設投資 <span class="mover-sector-badge">資本財・サービス</span></div>
+            <div class="mover-ticker">C32 · 週次</div>
+          </div>
+          <div class="mover-return pos">+20.63%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-3">
+          <div class="mover-info">
+            <div class="mover-name-jp">APG証券 <span class="mover-sector-badge">金融</span></div>
+            <div class="mover-ticker">APG · 週次</div>
+          </div>
+          <div class="mover-return pos">+17.77%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-4">
+          <div class="mover-info">
+            <div class="mover-name-jp">ヴーダン投資貿易 <span class="mover-sector-badge">一般消費財・サービス</span></div>
+            <div class="mover-ticker">SVD · 週次</div>
+          </div>
+          <div class="mover-return pos">+12.98%</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movers-col-title losers reveal">▼ TOP LOSERS <span style="font-size:13px;color:rgba(255,255,255,0.45);font-weight:400;letter-spacing:0.05em;margin-left:8px">週次TR: 前金曜→当金曜・配当込</span></div>
+        <div class="mover-card loser reveal">
+          <div class="mover-info">
+            <div class="mover-name-jp">FDC外国貿易投資 <span class="mover-sector-badge">不動産</span></div>
+            <div class="mover-ticker">FDC · 週次</div>
+          </div>
+          <div class="mover-return neg">−13.31%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-1">
+          <div class="mover-info">
+            <div class="mover-name-jp">サイゴン機械部品 <span class="mover-sector-badge">公益事業</span></div>
+            <div class="mover-ticker">SMA · 週次</div>
+          </div>
+          <div class="mover-return neg">−12.95%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-2">
+          <div class="mover-info">
+            <div class="mover-name-jp">ダイティエンロック <span class="mover-sector-badge">素材</span></div>
+            <div class="mover-ticker">DTL · 週次</div>
+          </div>
+          <div class="mover-return neg">−11.71%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-3">
+          <div class="mover-info">
+            <div class="mover-name-jp">ハパコグループ <span class="mover-sector-badge">素材</span></div>
+            <div class="mover-ticker">HAP · 週次</div>
+          </div>
+          <div class="mover-return neg">−10.46%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-4">
+          <div class="mover-info">
+            <div class="mover-name-jp">SPM <span class="mover-sector-badge">ヘルスケア</span></div>
+            <div class="mover-ticker">SPM · 週次</div>
+          </div>
+          <div class="mover-return neg">−9.57%</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;padding:32px 40px;background:white;border-left:4px solid var(--vn-gold);grid-column:1 / -1" class="reveal reveal-delay-3">
+      <div style="font-family:var(--font-sans-en);font-size:15px;letter-spacing:0.15em;color:var(--text-light);margin-bottom:12px">ANALYST NOTE</div>
+      <div class="justify-body" style="font-size:18px;line-height:1.9;color:var(--text-mid)">
+        値上がりは引き続き「振り子物色」が主軸で、前週軟調圏からの戻りが上位を占めた。最大値上がりの<strong>HSL +31.43%</strong>（食品・極小型）、<strong>LDG +23.16%</strong>（不動産）、前週Gainer上位のC32も<strong>+20.63%</strong>と2週連続上昇。大型では<strong>CII +7.10%</strong>（時価総額11.6兆VND、出来高1,524万株と週内最大級）が内需インフラの戻りとして目立った。一方、今週の本質は<strong>大型の下落</strong>にある。値下がり上位は流動性の薄い小型株が並ぶが（FDC・SMA・SPM等は出来高僅少）、指数を動かしたのは時価総額上位の<strong>Vingroup御三家——VIC −5.56%（時価総額1,506兆VND）・VHM −8.75%（570兆VND）・VRE −8.33%</strong>のトリプル安と、<strong>Gelex系のGEX −7.81%・GEE −8.17%</strong>。これらが不動産(−5.65%・3週連続最弱)・資本財(−2.03%)を押し下げ、週次−2.57%の主因となった。保険のBVH −5.88%、宝飾PNJ −5.63%も大型安。米関税overhangが大型・景気敏感に売りを集める構図が、4週目に入って一段と鮮明になった。
+      </div>
+      <div style="font-size:13px;line-height:1.7;color:var(--text-light);margin-top:16px;padding-top:14px;border-top:1px dashed rgba(0,0,0,0.1)">
+        ※ 個別銘柄・セクターのリターンは LSEG TR.TotalReturn1Wk（前金曜終値→当金曜終値、配当込）。値下がり上位は出来高僅少の小型株を含むため、本文では時価総額上位の値動きを併記した。<strong>セクターは構成銘柄シートからPython直計算（時価総額加重、抜粋シート不使用）</strong>、前週と算定基準を統一。VN-Index 週次（−2.57%）・日次は A基準（6/8 月始→6/12 金終、.VNI 終値ベース）。出所: LSEG VN_Weekly 2026/06/12。Web（USTR.gov）で関税スケジュールを再検証済。
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ═══ SECTION 3.5: STOCK SPOTLIGHT ═══ -->
+<section class="spotlight-section" style="background:var(--cream);padding:80px 0;margin:0">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Deep Dive</div>
+    <div class="section-title reveal">注目銘柄スポットライト</div>
+    <div class="section-title-en reveal">Stock Spotlight Analysis</div>
+
+    <div class="spotlight-grid">
+      <!-- Stock 1: C32 (pendulum return gainer) -->
+      <div class="reveal">
+        <div style="background:white;border-left:4px solid var(--down-color);padding:32px;margin-bottom:24px">
+          <div class="justify-body" style="font-family:var(--font-sans-en);font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">ヴィンホームズ<br>(Vinhomes JSC)</div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px">
+            <div>
+              <div style="font-size:26px;font-weight:700;color:var(--text-dark)">VHM</div>
+              <div style="font-size:16px;color:var(--text-light)">HOSE</div>
+            </div>
+            <div style="background:var(--down-color);color:white;padding:6px 12px;border-radius:4px;font-size:17px;font-weight:600">−8.75%</div>
+          </div>
+
+          <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)">
+            <div style="font-size:16px;color:var(--text-light);margin-bottom:8px">不動産（住宅・都市開発）</div>
+            <div class="justify-body" style="font-size:18px;line-height:1.8;color:var(--text-mid)">ベトナム最大の不動産デベロッパーで、Vingroup（VIC）傘下の住宅開発中核。時価総額<strong>約570兆VND</strong>でVN-Index構成2位の超大型株。<strong>先週−8.75%と急落</strong>し、不動産セクター(−5.65%・3週連続最弱)の下げを主導した。親会社VIC(−5.56%)・商業施設VRE(−8.33%)とVingroup御三家が揃って下落、時価総額が巨大なだけに指数寄与のマイナスは市場最大。月次でも−13.42%と調整局面が続く。米関税overhangが内需・不動産の大型に売りを誘発した格好。</div>
+          </div>
+
+          <div style="margin-bottom:24px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">時価総額</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--text-dark)">約570兆VND</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">週次リターン (TR)</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--down-color)">−8.75%</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">月次リターン</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--down-color)">−13.42%</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:rgba(218,37,29,0.08);padding:16px;border-radius:4px;margin-top:16px">
+            <div style="font-family:var(--font-sans-en);font-size:15px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">WHY NOW?</div>
+            <div class="justify-body" style="font-size:16px;line-height:1.7;color:var(--text-dark)">VN-Index構成2位の超大型が単独で−8.75%。Vingroup御三家のトリプル安が週次−2.57%の主因で、不動産大型の重さが指数の足かせに。FTSE EM発効(9/21)を控えた外国人フローの行方と、御三家の下げ止まりが今後の鍵となる。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stock 2: LPB (large bank sharp drop) -->
+      <div class="reveal" style="animation-delay:0.2s">
+        <div style="background:white;border-left:4px solid var(--up-color);padding:32px;margin-bottom:24px">
+          <div class="justify-body" style="font-family:var(--font-sans-en);font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">ホーチミン市インフラ投資<br>(Ho Chi Minh City Infrastructure Investment JSC)</div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px">
+            <div>
+              <div style="font-size:26px;font-weight:700;color:var(--text-dark)">CII</div>
+              <div style="font-size:16px;color:var(--text-light)">HOSE</div>
+            </div>
+            <div style="background:var(--up-color);color:white;padding:6px 12px;border-radius:4px;font-size:17px;font-weight:600">+7.10%</div>
+          </div>
+
+          <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)">
+            <div style="font-size:16px;color:var(--text-light);margin-bottom:8px">資本財・サービス（インフラ投資・BOT道路）</div>
+            <div class="justify-body" style="font-size:18px;line-height:1.8;color:var(--text-mid)">ホーチミン市を地盤とするインフラ投資会社。BOT有料道路・都市開発を手掛け、官民連携(PPP)インフラの代表格。<strong>先週+7.10%</strong>、出来高1,524万株と週内最大級の商いを伴って上昇し、全面安のなかで大型の数少ない買われ筋となった。北南高速鉄道の業者選定(Q2予定)やホーチミン国際金融センター構想など、インフラ・建設テーマの追い風が意識された可能性。ただし月次は−11.48%となお調整途上で、週次の反発は戻りの初動段階。</div>
+          </div>
+
+          <div style="margin-bottom:24px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">時価総額</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--text-dark)">約11.6兆VND</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">週次リターン (TR)</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--up-color)">+7.10%</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">月次リターン</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--down-color)">−11.48%</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--vn-gold-light);padding:16px;border-radius:4px;margin-top:16px">
+            <div style="font-family:var(--font-sans-en);font-size:15px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">WHY NOW?</div>
+            <div class="justify-body" style="font-size:16px;line-height:1.7;color:var(--text-dark)">全面安の週に大型(11.6兆VND)が出来高を伴って+7.10%。インフラ投資テーマ(北南高速鉄道Q2選定・IFC構想)が背景か。振り子物色が大型にも波及した一例だが、月次−11.48%で戻りは初動、持続性は次週以降の確認待ち。</div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION 5: NEWS ═══ -->
+<section class="news-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">News & Topics</div>
+    <div class="section-title reveal">ニューストピックス</div>
+    <div class="section-title-en reveal">Weekly Market Intelligence</div>
+
+    <div class="news-grid">
+      <div class="news-card featured reveal">
+        <div class="news-tag">POLICY ／ 政策・制度</div>
+        <div class="news-headline" style="font-size:28px">米USTR強制労働Section 301、ベトナム12.5%関税提案が継続overhang — 公聴会7/7、出席申請6/22期限</div>
+        <div class="news-body">
+          米通商代表部（USTR）が<strong>6/2</strong>に公表した強制労働関連Section 301調査（60カ国・地域対象）で、<strong>ベトナムを12.5%関税層</strong>に分類した提案が、引き続き市場のoverhangとなっている。USTRはパブリックコメントを<strong>7/6まで</strong>受け付け、<strong>公聴会を7/7</strong>に開催予定。公聴会への<strong>出席申請（証言要旨添付）は6/22が期限</strong>。本件は別途5/29に開始した知財関連Section 301（パブコメ期限7/2）と並走し、ベトナムは2件の関税圧力に同時直面する。提案は現時点で協議段階だが、月曜6/8の−2.63%ギャップダウンを含む週前半の下げと整合的で、景気敏感・大型への売りを誘発したとみられる。
+        </div>
+      </div>
+      <div class="news-card reveal reveal-delay-1">
+        <div class="news-tag">MARKET ／ 個別・大型</div>
+        <div class="news-headline">Vingroup御三家トリプル安が指数を主導 — 不動産−5.65%で3週連続最弱</div>
+        <div class="news-body">
+          週次−2.57%の主因は、時価総額上位の<strong>Vingroup御三家の同時下落</strong>だった。<strong>VIC −5.56%（時価総額1,506兆VND・構成最大）、VHM −8.75%（570兆VND・構成2位）、VRE −8.33%</strong>が揃って急落、不動産セクターを<strong>−5.65%・3週連続最弱</strong>に押し下げた。Gelex系のGEX −7.81%・GEE −8.17%も資本財・サービス(−2.03%)の重しに。米関税overhang下で、外需・景気敏感に加え<strong>大型内需(不動産)</strong>にも売りが波及した。一方で銀行大型はVCB −0.16%・ACB +1.34%・STB +1.58%と底堅く、金融(−0.88%)はセクター内で相対健闘した。
+        </div>
+      </div>
+      <div class="news-card reveal reveal-delay-2">
+        <div class="news-tag">FLOW ／ セクター・物色</div>
+        <div class="news-headline">振り子物色は4週連続も全面安色 — 公益+0.23%のみプラス、IT首位陥落で11中10セクター安</div>
+        <div class="news-body">
+          セクター主役の入れ替わりは<strong>4週連続</strong>。前週マイナス転落していた<strong>公益事業が+0.23%で唯一のプラス・首位</strong>に復帰し、前週首位の<strong>情報技術は−2.00%へ転落</strong>（FPT −2.00%）。だが今週は<strong>11セクター中10がマイナス</strong>と、3週間テーマ買いを循環させてきた「振り子」がついに地合いを支えきれなかった。下落はディフェンシブ(ヘルスケア−0.21%・生活必需品−0.39%)が相対耐性を示す一方、景気敏感・大型(不動産−5.65%・一般消費財−3.60%・エネルギー−2.20%)に集中。物色の循環は続いたが、大型安が循環を呑み込み、相場全体は全面安に傾いた。6/8号で示した「overhangが振り子を上書きするか」という問いに、今週は"上書き寄り"の答えが出た形。
+        </div>
+      </div>
+    </div>
+    <div style="font-size:13px;color:var(--text-light);margin-top:20px;line-height:1.7">※ 出所: <strong>USTR（6/2 強制労働Section 301調査・60カ国/地域に追加関税提案、ベトナムは12.5%層／パブコメ期限7/6・公聴会7/7・出席申請期限6/22）</strong>、5/29開始の知財Section 301（Priority Foreign Country指定、パブコメ期限7/2）。市場データは LSEG VN_Weekly 2026/06/12 <strong>構成銘柄シート</strong>から時価総額加重で再計算（抜粋シートは加重リターン列に破損があるため不使用）。VN-Index 週次−2.57%・終値1,791.65pt。5月CPIは+5.60%（2020/1以来高水準、6/3発表済）、次回6月CPIは7/3発表予定。</div>
+  </div>
+</section>
+
+
+<!-- ═══ SECTION 6: CATALYST ═══ -->
+<section class="catalyst-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Looking Ahead</div>
+    <div class="section-title reveal">今週のカタリスト</div>
+    <div class="section-title-en reveal">Key Events to Watch</div>
+
+    <div class="catalyst-list">
+      <div class="catalyst-item reveal">
+        <div class="catalyst-date">6/15-19</div>
+        <div>
+          <div class="catalyst-title">米関税overhangの市場吸収度と下値攻防</div>
+          <div class="catalyst-desc">週内安値1,780pt前後の下値攻防を注視。USTR 12.5%関税提案の継続反応次第で、下抜けなら調整深まりリスク</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-1">
+        <div class="catalyst-date">6/22</div>
+        <div>
+          <div class="catalyst-title">USTR強制労働Section 301 公聴会出席申請期限</div>
+          <div class="catalyst-desc">ベトナム政府・企業の出席表明と申請規模が、米国側のスタンスを示唆する材料に。7/7公聴会の前哨戦</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-2">
+        <div class="catalyst-date">6月中</div>
+        <div>
+          <div class="catalyst-title">振り子物色 第5週目と地合いの分岐</div>
+          <div class="catalyst-desc">4週続いたセクター主役交代が続くか、それとも全面安が定着するか。大型(Vingroup御三家)の下げ止まりが鍵</div>
+        </div>
+        <div class="catalyst-impact mid">MID IMPACT</div>
+      </div>
+    
+    
+    </div>
+
+    <div class="section-title reveal" style="margin-top:40px;font-size:1.6rem">今後のカタリスト</div>
+    <div class="catalyst-list">
+      <div class="catalyst-item reveal">
+        <div class="catalyst-date">7/2</div>
+        <div>
+          <div class="catalyst-title">USTR知財Section 301 パブリックコメント期限</div>
+          <div class="catalyst-desc">5/29に開始した対ベトナム知財調査のパブコメ期限。提出内容・USTRの方向感が、関税賦課リスクの初期評価材料に</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal">
+        <div class="catalyst-date">7/7</div>
+        <div>
+          <div class="catalyst-title">USTR強制労働Section 301 公聴会</div>
+          <div class="catalyst-desc">ベトナム12.5%関税提案を巡る公聴会。証言内容と米側の姿勢が当面の最大焦点に</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-1">
+        <div class="catalyst-date">6〜9月</div>
+        <div>
+          <div class="catalyst-title">FTSE EM 投資ガイドライン精査本格化</div>
+          <div class="catalyst-desc">9/21発効まで残り約3.1ヶ月。組入候補への事前ポジション形成が継続するか（銘柄詳細はニューストピックス参照）</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-2">
+        <div class="catalyst-date">Q2</div>
+        <div>
+          <div class="catalyst-title">北南高速鉄道 請負業者選定</div>
+          <div class="catalyst-desc">建設省発表予定。インフラ・建設・送電インフラ株（CII等）に再注目余地</div>
+        </div>
+        <div class="catalyst-impact mid">MID IMPACT</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RISK STRIP ═══ -->
+<div class="risk-section">
+  <div class="risk-inner">
+    <div>
+      <div class="risk-label">RISK MONITOR — SIMPLIFIED</div>
+      <div class="risk-statement">"米USTR強制労働Section 301(6/2)の12.5%関税提案が継続overhang、知財Section 301(5/29)と合わせ2件の関税圧力が同時に市場を覆う。週次は−2.57%で4週続落、下げは月曜6/8の−2.63%ギャップダウンにほぼ集約された。時価総額最大のVingroup御三家(VIC−5.56%・VHM−8.75%・VRE−8.33%)が揃って下落し、不動産は−5.65%・3週連続最弱。セクターの振り子物色は4週連続(公益+0.23%首位・IT首位陥落)も、11中10セクター安で全面安色が強まった。下値支持は週内安値の1,780pt前後、割れれば調整深まりリスク。6/22の公聴会出席申請期限・7/7公聴会が当面の最重要焦点。"</div>
+    </div>
+    <div class="risk-stat-group">
+      <div class="risk-stat">
+        <span class="risk-stat-val">−2.57%</span>
+        <span class="risk-stat-label">週次騰落（4週続落）</span>
+      </div>
+      <div class="risk-stat">
+        <span class="risk-stat-val">−47.3pt</span>
+        <span class="risk-stat-label">前週比・1,790pt付近</span>
+      </div>
+      <div class="risk-stat">
+        <span class="risk-stat-val">↓</span>
+        <span class="risk-stat-label">リスクトレンド（米関税overhang・全面安）</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ 2026 ANNUAL CALENDAR ═══ -->
+<section class="calendar-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">📅 2026 Key Events</div>
+    <h2 class="section-title reveal">2026年 ベトナム・グローバル イベントカレンダー</h2>
+    <p class="section-title-en reveal">Vietnam & World — Annual Event Timeline</p>
+
+    <div class="cal-columns">
+
+      <!-- ── ベトナム ── -->
+      <div class="cal-col">
+        <div class="cal-col-header vn">🇻🇳 ベトナム</div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">政治・制度</div>
+          <div class="cal-item done">
+            <span class="cal-date">1/19〜23</span>
+            <span class="cal-body">第14回共産党全国大会（ハノイ）<br><span class="cal-note">トー・ラム書記長続投確認。GDP10%目標を設定</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">3/15</span>
+            <span class="cal-body">第16期国民議会選挙<br><span class="cal-note">7,350万人が投票。共産党97%議席獲得</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">3/21</span>
+            <span class="cal-body">選挙結果発表</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">4月上旬</span>
+            <span class="cal-body">第16期国民議会開幕<br><span class="cal-note">大統領・首相の承認投票</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">5/1〜3</span>
+            <span class="cal-body">高市早苗首相 公式訪問<br><span class="cal-note">トー・ラム書記長/フン首相と会談、経済安保5分野（エネルギー[LNG含む]・重要鉱物・AI・半導体・宇宙）で合意</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">資本市場</div>
+          <div class="cal-item done">
+            <span class="cal-date">4/8</span>
+            <span class="cal-body">FTSE Russell 中間審査（Interim Review）結果公表<br><span class="cal-note">4/8発表。EM昇格正式確認。9月発効確定。推定パッシブ流入10〜100億ドル</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">5/13</span>
+            <span class="cal-body">BSR、VN30指数に正式採用<br><span class="cal-note">ETF・パッシブ需要が構造流入。週次+22.4%の主因の一つ</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item high">
+            <span class="cal-date">9/21</span>
+            <span class="cal-body">FTSE EM昇格 正式発効<br><span class="cal-note">フロンティア→新興国。FTSE GEISへ組入れ。推定流入10〜100億ドル</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">2026年内</span>
+            <span class="cal-body">CCP（中央清算機関）制度整備完了予定<br><span class="cal-note">VSDC傘下。システム稼働はQ1 2027見込み</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">MSCI EM昇格審査継続<br><span class="cal-note">2026〜2027年を目標年次とするロードマップ</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">祝日・休場</div>
+          <div class="cal-item done">
+            <span class="cal-date">2/14〜22</span>
+            <span class="cal-body">テト（旧正月）大型連休<br><span class="cal-note">市場最大1週間休場</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">4/26〜27</span>
+            <span class="cal-body">フン王記念日（旧暦3月10日）</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">4/30〜5/1</span>
+            <span class="cal-body">南部解放記念日・メーデー（市場休場）</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">9/1〜2</span>
+            <span class="cal-body">建国記念日（独立記念日）2連休</span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">11/24</span>
+            <span class="cal-body">文化の日（2026年より新設）</span>
+            <span class="cal-badge watch-badge">NEW</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">マクロ・インフラ</div>
+          <div class="cal-item mid">
+            <span class="cal-date">Q2 2026</span>
+            <span class="cal-body">北南高速鉄道 請負業者選定<br><span class="cal-note">建設省発表予定</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">2026年内</span>
+            <span class="cal-body">国際金融センター（ホーチミン）開業<br><span class="cal-note">IFC専用裁判所法も成立済み</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">GDP目標 10%（政府設定）<br><span class="cal-note">インフラ投資前年比+34%。対米関税交渉の行方が最大変数</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">米・Section 301 調査（3/11〜）<br><span class="cal-note">ベトナム含む16カ国対象。製造業・輸出への波及を注視</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── グローバル ── -->
+      <div class="cal-col">
+        <div class="cal-col-header gl">🌐 グローバル</div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">Q1（1〜3月）</div>
+          <div class="cal-item done">
+            <span class="cal-date">1/8</span>
+            <span class="cal-body">国連 世界経済状況・予測発表</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">1/19〜23</span>
+            <span class="cal-body">ダボス会議（世界経済フォーラム、スイス）</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">1月中</span>
+            <span class="cal-body">IMF 世界経済見通し発表</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">3/11</span>
+            <span class="cal-body">米USTR Section 301 調査開始<br><span class="cal-note">ベトナム含む16カ国。製造業の構造過剰生産が対象</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">3月中</span>
+            <span class="cal-body">OECD 世界経済見通し発表</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">Q2（4〜6月）</div>
+          <div class="cal-item done">
+            <span class="cal-date">4/13〜18</span>
+            <span class="cal-body">IMF・世界銀行 春季総会（ワシントン）<br><span class="cal-note">ASEAN新興国の成長見通し上方修正</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item done">
+            <span class="cal-date">4月中</span>
+            <span class="cal-body">IMF 世界経済見通し（改訂） / WTO 2025年通年貿易統計</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">6/15〜17</span>
+            <span class="cal-body">G7 首脳会議（フランス・エビアン）</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">6月中</span>
+            <span class="cal-body">世界銀行 世界経済見通し / OECD 世界経済見通し</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">Q3（7〜9月）</div>
+          <div class="cal-item mid">
+            <span class="cal-date">7月中</span>
+            <span class="cal-body">IMF 世界経済見通し（中間）</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">9月中</span>
+            <span class="cal-body">第81回国連総会 一般討論（ニューヨーク）</span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">Q4（10〜12月）</div>
+          <div class="cal-item high">
+            <span class="cal-date">10/12〜18</span>
+            <span class="cal-body">IMF・世界銀行 年次総会（タイ・バンコク）<br><span class="cal-note">ASEAN開催のためアジア市場の注目度高い</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">10月中</span>
+            <span class="cal-body">IMF 世界経済見通し / 世界銀行 一次産品見通し</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">11/9〜20</span>
+            <span class="cal-body">COP31（トルコ・アンタルヤ）</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">11月中</span>
+            <span class="cal-body">APEC 閣僚・首脳会議（中国・深セン）<br><span class="cal-note">中越関係・貿易政策の観点で注視</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">11月</span>
+            <span class="cal-body">米中間選挙（下院全議席改選）<br><span class="cal-note">通商政策の方向性に影響</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">12月中</span>
+            <span class="cal-body">G20 サミット（米国・マイアミ）</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">通年モニタリング</div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">FRB 利下げペース<br><span class="cal-note">ドル高/VND軟化・外国人フローに直結</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">米中関税摩擦の動向<br><span class="cal-note">中国からの製造拠点移管がVN FDI流入を左右</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.cal-columns -->
+  </div>
+</section>
+<!-- ═══ END CALENDAR ═══ -->
+
+<!-- ═══ COLUMN: ひとくちメモ ═══ -->
+<section class="column-section">
+  <div class="column-bg"></div>
+  <div class="column-inner">
+    <div class="column-left">
+      <div class="section-eyebrow reveal">🇻🇳 Hitokuchi Memo</div>
+      <div class="column-em reveal">振り子の限界</div>
+      <div class="column-subtitle reveal">THE PENDULUM, WEEK 4 — 主役交代は続いたが、地合いは折れた</div>
+      <div class="column-body reveal">
+        主役交代の振り子が、4週連続で続いた。5/18-22のエネルギー最弱→5/25-29のIT最弱→6/1-5のIT首位反発→そして<strong style="color:var(--vn-gold)">先週は公益事業が+0.23%で唯一のプラス・首位に復帰、前週首位のITは−2.00%へ転落</strong>。セクターの主役が入れ替わる循環は、これで4週も途切れていない。
+      </div>
+      <div class="column-body reveal" style="margin-top: -12px;">
+        だが先週、振り子は決定的に変質した——<strong style="color:var(--vn-gold)">11セクター中10がマイナス、週次は−2.57%と下げ幅をむしろ拡大</strong>。時価総額最大のVingroup御三家(VIC−5.56%・VHM−8.75%・VRE−8.33%)が揃って下落し、振り子の"勝ち組"を作る循環がもはや指数を支えられなかった。6/8号で『overhangが振り子を上書きするか』と書いたが、先週はその"上書き"が起きた週だった。米関税overhangという方向性のあるベアトレンドが、テーマ買いの循環を呑み込んだ。3週間は振り子が地合いを繕ってきたが、4週目に大型安がそれを上回った。次の試金石は6/22の公聴会出席申請期限・7/7公聴会となる。
+      </div>
+      <div class="column-highlight reveal">
+        「振り子は4週続いた。だが先週、主役交代という"繕い"が地合いの下落に呑まれた。テーマの循環は、外部要因が overhang として乗り続ける限り、いつか上書きされる。3週は支えた振り子が、4週目に限界を見せた。」
+      </div>
+    </div>
+
+    <div class="column-right-visual">
+      <div style="font-family:var(--font-sans-en);font-size:15px;letter-spacing:0.18em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-bottom:4px">主役交代の4週連続 ／ The Pendulum, Week 4</div>
+      <div class="fact-card reveal">
+        <div class="fact-number">5/18-22</div>
+        <div class="fact-label">エネルギーが <strong style="color:var(--down-color)">−4.95%</strong> で最弱に転落。ITが唯一のプラスに。</div>
+      </div>
+      <div class="fact-card reveal reveal-delay-1">
+        <div class="fact-number">5/25-29</div>
+        <div class="fact-label">ITが <strong style="color:var(--down-color)">−2.04%</strong> で最弱へ転落。公益事業 <strong style="color:var(--up-color)">+1.78%</strong> が首位へ反発。</div>
+      </div>
+      <div class="fact-card reveal reveal-delay-2">
+        <div class="fact-number">6/1-5</div>
+        <div class="fact-label">ITが <strong style="color:var(--up-color)">+4.14%</strong> で首位へ。公益事業 <strong style="color:var(--down-color)">−1.77%</strong> マイナス転落・3週連続で振り子。</div>
+      </div>
+      <div class="fact-card reveal reveal-delay-3">
+        <div class="fact-number">6/8-12</div>
+        <div class="fact-label">公益事業が <strong style="color:var(--up-color)">+0.23%</strong> で唯一のプラス・首位復帰。ITは <strong style="color:var(--down-color)">−2.00%</strong> 転落・<strong style="color:var(--down-color)">11中10セクター安</strong>で全面安・4週連続。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-brand" href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" title="Capital Quest Corporation, Ltd. 公式サイトへ" style="display:inline-block;line-height:0;text-decoration:none"><img src="./assets/cqc_logo_white.png" alt="Capital Quest Corporation, Ltd."></a>
+      <div class="footer-dept"><a href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Capital Quest Corporation, Ltd. — 投資調査部</a></div>
+    </div>
+    <div class="footer-meta">
+      <div class="footer-issue">WEEKLY REPORT</div>
+      <div class="footer-date">2026.06.15</div>
+    </div>
+  </div>
+  <div class="footer-disclaimer">
+    本レポートはCapital Quest Corporation, Ltd.（CQC）投資調査部が情報提供のみを目的として作成したものであり、特定の金融商品の取得・売買・保有等を勧誘・推奨するものではありません。投資に関する最終判断は、利用者ご自身の責任と判断において行ってください。本資料は信頼できると判断した情報・データ（第三者提供データを含む）に基づき作成しておりますが、その正確性・完全性・適時性を保証するものではありません。本資料に記載した見解・予想・見通しは作成時点のものであり、将来の市場環境や運用成果を示唆・保証するものではなく、予告なく変更されることがあります。過去の実績・データは将来の成果を保証するものではありません。本資料の利用に起因して生じたいかなる損害についても、当社は一切の責任を負いません。本資料の全部または一部の無断転用・複製・再配布・改変はご遠慮ください。© 2026 Capital Quest Corporation, Ltd.
+  </div>
+</footer>
+
+
+<script>
+// ════════════════════════════════════════════════════════════
+// 🎬 HERO MEDIA CONFIG — 弓場さんの設定ゾーン
+// ────────────────────────────────────────────────────────────
+//
+// ▼ 動画を使う場合（MP4推奨）
+//   1. HTMLファイルと同じ場所に「vn_videos」フォルダを作成
+//   2. 動画ファイルを入れる
+//   3. 下の HERO_VIDEO にファイル名を記入
+//   動画がなければ自動的にスライドショーに切り替わります
+//
+const HERO_VIDEO = '';              // 例: 'hanoi_drone.mp4'  ← 動画を使うならここに記入
+const VIDEO_FOLDER = './vn_videos/';
+
+// ▼ 写真スライドショー設定
+//   1. HTMLファイルと同じ場所に「vn_photos」フォルダを作成
+//   2. 写真を入れて、下のリストにファイル名を追記
+//
+const PHOTO_FOLDER = './vn_photos/';
+const PHOTO_LIST = [
+  './vn_photos/photo01.png',
+  './vn_photos/photo02.jpg',
+  './vn_photos/photo03.jpg',
+  './vn_photos/photo04.jpg',
+  './vn_photos/photo05.jpg',
+];
+
+const SLIDE_INTERVAL = 5000;   // スライド間隔（ミリ秒）デフォルト5秒
+// ════════════════════════════════════════════════════════════
+
+const videoEl   = document.getElementById('heroVideo');
+const slideshow = document.getElementById('heroSlideshow');
+const dotsEl    = document.getElementById('heroDots');
+const counterEl = document.getElementById('heroCounter');
+const arrowL    = document.getElementById('arrowLeft');
+const arrowR    = document.getElementById('arrowRight');
+
+let currentIndex = 0;
+let timer = null;
+let slides = [];
+let usingVideo = false;
+
+// ── 動画モード ──────────────────────────────
+function tryVideo() {
+  if (!HERO_VIDEO) return initSlideshow();
+  const src = VIDEO_FOLDER + HERO_VIDEO;
+  videoEl.src = src;
+  videoEl.oncanplay = () => {
+    videoEl.classList.add('active');
+    usingVideo = true;
+    // 動画モードではアローとドット非表示
+    arrowL.style.display = 'none';
+    arrowR.style.display = 'none';
+    dotsEl.style.display = 'none';
+    counterEl.style.display = 'none';
+  };
+  videoEl.onerror = () => initSlideshow();
+  videoEl.load();
+}
+
+// ── スライドショーモード ─────────────────────
+function initSlideshow() {
+  // 写真を1枚ずつ先読みして追加
+  let loaded = 0;
+  let validPhotos = [];
+
+  PHOTO_LIST.forEach((name, i) => {
+    const img = new Image();
+    img.onload = () => {
+      validPhotos.push({ index: i, src: img.src });
+      loaded++;
+      if (loaded === PHOTO_LIST.length) buildSlideshow(validPhotos.sort((a,b)=>a.index-b.index).map(p=>p.src));
+    };
+    img.onerror = () => {
+      loaded++;
+      if (loaded === PHOTO_LIST.length) buildSlideshow(validPhotos.sort((a,b)=>a.index-b.index).map(p=>p.src));
+    };
+    img.src = name;
+  });
+}
+
+function buildSlideshow(photos) {
+  if (photos.length === 0) {
+    // フォールバック: グラデーション背景のみ
+    slideshow.style.background = 'linear-gradient(135deg, #001a0d 0%, #003a1e 40%, #1a0008 100%)';
+    arrowL.style.display = 'none';
+    arrowR.style.display = 'none';
+    return;
+  }
+
+  // スライド要素を生成
+  photos.forEach((src, i) => {
+    const div = document.createElement('div');
+    div.className = 'hero-slide' + (i === 0 ? ' active' : '');
+    div.style.backgroundImage = `url('${src}')`;
+    slideshow.appendChild(div);
+    slides.push(div);
+  });
+
+  // ドット生成
+  slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => goTo(i);
+    dotsEl.appendChild(dot);
+  });
+
+  updateCounter();
+  startTimer();
+
+  arrowL.onclick = () => { goTo((currentIndex - 1 + slides.length) % slides.length); restartTimer(); };
+  arrowR.onclick = () => { goTo((currentIndex + 1) % slides.length); restartTimer(); };
+}
+
+function goTo(n) {
+  // 現在のスライドを非活性化
+  slides[currentIndex].classList.remove('active');
+  document.querySelectorAll('.hero-dot')[currentIndex]?.classList.remove('active');
+
+  currentIndex = n;
+
+  // Ken Burns アニメをリセットして再生
+  const s = slides[currentIndex];
+  s.style.animation = 'none';
+  s.offsetHeight; // reflow
+  s.style.animation = '';
+  s.classList.add('active');
+  document.querySelectorAll('.hero-dot')[currentIndex]?.classList.add('active');
+  updateCounter();
+}
+
+function updateCounter() {
+  if (slides.length > 1) counterEl.textContent = `${String(currentIndex+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
+}
+
+function startTimer() {
+  timer = setInterval(() => goTo((currentIndex + 1) % slides.length), SLIDE_INTERVAL);
+}
+
+function restartTimer() {
+  clearInterval(timer);
+  startTimer();
+}
+
+// スワイプ対応（タッチ）
+let touchStartX = 0;
+document.querySelector('.hero').addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
+document.querySelector('.hero').addEventListener('touchend', e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) {
+    goTo(diff > 0 ? (currentIndex+1)%slides.length : (currentIndex-1+slides.length)%slides.length);
+    restartTimer();
+  }
+});
+
+// 起動
+tryVideo();
+
+// ── Scroll Reveal ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible'));
+</script>
+</body>
+</html>
